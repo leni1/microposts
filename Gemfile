@@ -4,6 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.7.2'
 
 gem 'rails', '~> 6.1.1'
+gem 'active_storage_validations', '~> 0.8.2'
 gem 'bootstrap-sass', '3.4.1'
 gem 'will_paginate', '~> 3.1.8'
 gem 'bootstrap-will_paginate', '~> 1.0.0'
@@ -16,6 +17,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'faker', '~>2.1.2'
 gem 'bcrypt', '~> 3.1.7'
 gem 'image_processing', '~> 1.2'
+gem 'mini_magick', '~> 4.9.5'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
@@ -42,7 +44,7 @@ group :test do
 end
 
 group :production do
-  gem 'aws-sdk-s3', '>=1.87.0'
+  gem 'aws-sdk-s3', '~> 1.87', require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
