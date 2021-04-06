@@ -37,3 +37,12 @@ If the test suite passes, you can run the app in a local server:
 ```bash
 $ rails server
 ```
+
+**Note**: The following tests are failing:
+* `test/integration/users_signup_test.rb`
+* `test/controllers/users_controller_test.rb`
+* `test/models/user_test.rb`
+* `test/integration/following_test.rb`
+* `test/integration/microposts_interface_test.rb`
+
+Will make time to troubleshoot why since I **_seemed_** to have followed the tutorial just 🤷‍♀️
